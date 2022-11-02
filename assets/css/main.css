@@ -2103,6 +2103,11 @@ input, select, textarea {
 				
 			}
 
+			.image.thumb .book:hover {
+				background-image: url("images/bookstreet.gif");
+				
+			}
+
 		.image img {
 			border-radius: 0.35em;
 			display: block;

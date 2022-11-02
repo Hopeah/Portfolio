@@ -116,13 +116,23 @@
 
 })(jQuery);
 
-document.querySelector('.coffee').addEventListener('mouseover', hover)
-document.querySelector('.coffee').addEventListener('mouseout', unhover)
+document.querySelector('.coffee').addEventListener('mouseover', hoverCoffee)
+document.querySelector('.coffee').addEventListener('mouseout', unhoverCoffee)
+document.querySelector('.book').addEventListener('mouseover', hoverBook)
+document.querySelector('.book').addEventListener('mouseout', unhoverBook)
 
-function hover() {
+function hoverCoffee() {
 	document.querySelector('#coffee').setAttribute('src', 'images/coffeewithsteff.gif')
 }
 
-function unhover() {
+function unhoverCoffee() {
 	document.querySelector('#coffee').setAttribute('src', 'images/coffeewithsteff.png')
+}
+
+function hoverBook() {
+	document.querySelector('#book').setAttribute('src', 'images/bookstreet.gif')
+}
+
+function unhoverBook() {
+	document.querySelector('#book').setAttribute('src', 'images/bookstreet.png')
 }
