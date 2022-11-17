@@ -2108,6 +2108,11 @@ input, select, textarea {
 				
 			}
 
+			.image.thumb .viz:hover {
+				background-image: url("images/business-viz.gif");
+				
+			}
+
 		.image img {
 			border-radius: 0.35em;
 			display: block;

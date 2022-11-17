@@ -120,6 +120,8 @@ document.querySelector('.coffee').addEventListener('mouseover', hoverCoffee)
 document.querySelector('.coffee').addEventListener('mouseout', unhoverCoffee)
 document.querySelector('.book').addEventListener('mouseover', hoverBook)
 document.querySelector('.book').addEventListener('mouseout', unhoverBook)
+document.querySelector('.viz').addEventListener('mouseover', hoverViz)
+document.querySelector('.viz').addEventListener('mouseout', unhoverViz)
 
 function hoverCoffee() {
 	document.querySelector('#coffee').setAttribute('src', 'images/coffeewithsteff.gif')
@@ -135,4 +137,12 @@ function hoverBook() {
 
 function unhoverBook() {
 	document.querySelector('#book').setAttribute('src', 'images/bookstreet.png')
+}
+
+function hoverViz() {
+	document.querySelector('#viz').setAttribute('src', 'images/businessviz.gif')
+}
+
+function unhoverViz() {
+	document.querySelector('#viz').setAttribute('src', 'images/businessviz.png')
 }
