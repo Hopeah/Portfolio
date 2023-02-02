@@ -124,6 +124,8 @@ document.querySelector('.viz').addEventListener('mouseover', hoverViz)
 document.querySelector('.viz').addEventListener('mouseout', unhoverViz)
 document.querySelector('.tenzi').addEventListener('mouseover', hoverTenzi)
 document.querySelector('.tenzi').addEventListener('mouseout', unhoverTenzi)
+document.querySelector('.todont').addEventListener('mouseover', hoverTodont)
+document.querySelector('.todont').addEventListener('mouseout', unhoverTodont)
 
 function hoverCoffee() {
 	document.querySelector('#coffee').setAttribute('src', 'images/coffeewithsteff.gif')
@@ -155,4 +157,12 @@ function hoverTenzi() {
 
 function unhoverTenzi() {
 	document.querySelector('#tenzi').setAttribute('src', 'images/gameoftenzi.png')
+}
+
+function hoverTodont() {
+	document.querySelector('#todont').setAttribute('src', 'images/todont.gif')
+}
+
+function unhoverTodont() {
+	document.querySelector('#todont').setAttribute('src', 'images/todont.png')
 }
