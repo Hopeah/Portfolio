@@ -1,0 +1,467 @@
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-padding, 55px);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+header {
+  background-color: #222;
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+  padding: 20px 10px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 0px 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+ul.repo-ul {
+  width: 49%;
+  padding: 0 1em;
+}
+
+.nav-ul {
+  gap: 2rem;
+}
+
+nav a:hover,
+.nav-scrolled {
+  text-decoration: 2px underline dashed #7f3e7a;
+}
+
+/*---------- MAIN ----------*/
+
+.main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.title {
+  font-size: 4rem;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: #222;
+  margin-top: 1rem;
+}
+
+h2 {
+  color: #7f3e7a;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.hire {
+  margin-top: 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #59ff6a;
+  border-radius: 50%;
+  display: inline-block;
+  animation: fadeinout 1.5s linear 1 forwards;
+  animation-iteration-count: infinite;
+  margin-right: 4px;
+}
+
+@keyframes fadeinout {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.about-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  font-size: 0.875rem;
+  color: #000;
+}
+
+.about-info h4 {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #222;
+  font-weight: 700;
+}
+
+.p-about {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 2rem 0;
+  font-size: 1.3rem;
+}
+
+img.usaFlag {
+  width:20px;
+}
+img.koreanFlag {
+  padding-top: 4px;
+  width: 20px;
+}
+
+h3,
+.skill-title {
+  font-size: 1.3rem;
+  margin-bottom: 0.875rem;
+}
+
+.skill-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 2rem;
+  max-width: max-content;
+}
+
+.box {
+  background: rgba(217, 217, 217, 0.58);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  box-sizing: border-box;
+  padding: 0.4rem 3rem 0.4rem 1rem;
+  border-radius: 0.875rem;
+  display: flex;
+  gap: 10px;
+  justify-items: center;
+  align-items: center;
+}
+
+.box p {
+  font-size: 0.875rem;
+}
+
+
+.d-none {
+  display: none;
+}
+
+.btn-skills {
+  background: #d0d0d0;
+  border: 0.8px solid rgba(149, 149, 149, 0.4);
+  border-radius: 16.1953px;
+  padding: 4px 10px;
+  margin-bottom: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: rgba(153, 152, 152, 0.56);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/*---------- PROJECTS ----------*/
+
+#projects {
+  background: #222;
+  padding: 20px;
+}
+
+.project {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.project h1 {
+  color: #7f3e7a;
+  padding: 3rem 0 2rem 0;
+}
+
+.project p {
+  color: #fff;
+  font-family: "Space Mono", monospace;
+  font-size: 1.3rem;
+}
+
+.git-link {
+  text-align: center;
+}
+
+.git-link a {
+  font-size: 1rem;
+}
+
+.repositories {
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-right: 20px;
+}
+
+.repo {
+  background-color: rgba(0, 0, 0, 0.322);
+  display: flex;
+  /* flex-direction: column; */
+  place-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.repo:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.repo-li h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.3em;
+  color: #fff;
+}
+
+.repo-li p {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+
+  color: #ffffff;
+}
+
+.tags li {
+  border-radius: 1rem;
+  padding: 1px 10px;
+  font-size: 0.7rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+img.image.main {
+  width: 100%;
+  height: 100%;
+  padding: 1.5em 0;
+}
+
+img {
+  width: 80%;
+}
+
+.tags li:hover {
+  filter: brightness(1) opacity(0.8);
+}
+
+.tags li:first-child {
+  background: #b7f0b5;
+  border: 0.809764px solid #37a74275;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+
+  margin-right: 0.875rem;
+}
+
+.tags li:last-child {
+  background: #efc3eb;
+  border: 0.809764px solid #37a74275;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tags li a {
+  color: rgba(0, 0, 0, 0.329);
+}
+
+.title-section {
+  font-family: "Space Mono", monospace;
+  font-size: 2.5rem;
+}
+
+p.git-link {
+  margin-top: 0.7em;
+}
+
+
+/*---------- CONTACT ----------*/
+
+.contact {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.3rem;
+}
+
+.contact h1 {
+  color: #7f3e7a;
+  margin-top: 3rem;
+}
+
+.contact a {
+  color: #000;
+  font-weight: 700;
+}
+
+.contact p {
+  padding: 2rem 0;
+}
+
+u {
+  text-decoration: underline dashed #7f3e7a;
+}
+
+u:hover {
+  text-decoration-color: #efc3eb;
+}
+
+.copyright {
+  text-align: center;
+  padding: 50px 0 0 0;
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.fa-twitter {
+  color: #1da1f2;
+}
+
+.fa-linkedin {
+  color: #0a66c2;
+}
+
+#contact {
+  font-family: "Space Mono", monospace;
+  padding: 20px 20px 60px 20px;
+}
+
+footer {
+  padding: 40px;
+}
+
+/*---------- MEDIA QUERIES ----------*/
+
+
+
+@media (max-width: 720px) {
+  ul.repo-ul {
+    width: 100%;
+    padding: 0 2em;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  .skill-content {
+    grid-template-columns: 1fr;
+  }
+  .skill-title {
+    text-align: center;
+  }
+  .skills {
+    place-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-info {
+    gap: 20px;
+  }
+  #email {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .title {
+    font-size: 3rem;
+  }
+  .project p,
+  .p-about,
+  .contact p {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  .title-section {
+    font-size: 2rem;
+  }
+  .repositories {
+    grid-template-columns: 1fr;
+  }
+  #contact {
+    margin: 20px 20px;
+  }
+  .nav-ul {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .nav-ul li {
+    font-size: 0.8rem;
+  }
+  .nav-ul li:first-child {
+    margin-left: 10px;
+  }
+  #logo {
+    width: 90px;
+  }
+}
+
+@media (max-width: 370px) {
+  nav {
+    place-content: center;
+  }
+}
