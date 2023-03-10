@@ -8,6 +8,8 @@ document.querySelector('.tenzi').addEventListener('mouseover', hoverTenzi)
 document.querySelector('.tenzi').addEventListener('mouseout', unhoverTenzi)
 document.querySelector('.todont').addEventListener('mouseover', hoverTodont)
 document.querySelector('.todont').addEventListener('mouseout', unhoverTodont)
+document.querySelector('.bar').addEventListener('mouseover', hoverBar)
+document.querySelector('.bar').addEventListener('mouseout', unhoverBar)
 
 function hoverCoffee() {
 	document.querySelector('#coffee').setAttribute('src', 'images/coffeewithsteff.gif')
@@ -47,4 +49,12 @@ function hoverTodont() {
 
 function unhoverTodont() {
 	document.querySelector('#todont').setAttribute('src', 'images/todont.png')
+}
+
+function hoverBar() {
+	document.querySelector('#bar').setAttribute('src', 'images/cozybar.gif')
+}
+
+function unhoverBar() {
+	document.querySelector('#bar').setAttribute('src', 'images/cozybar.png')
 }
